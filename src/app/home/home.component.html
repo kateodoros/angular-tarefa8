@@ -1,0 +1,24 @@
+<div class="card" style="max-width: 500px;">
+<div class="card-header">Quem desenvolveu a página?</div>
+<div class="card-body">
+  <h5 class="card-title">Karoline Teodoro da Silva</h5>
+  <p class="card-text">RA: 0050831921012</p>
+</div>
+</div>
+
+<table class="table" style="max-width: 500px;">
+<thead>
+  <tr>
+    <th scope="col">Data e Hora</th>
+    <th scope="col">Real Brasileiro (BRL)</th>
+    <th scope="col">Dólar Estadunidense (USD)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let rate of this.bitCoin.bitCoinRates">
+    <td>{{ rate.time.updated }}</td>
+    <td>{{ rate.bpi.BRL.rate_float }}</td>
+    <td>{{ rate.bpi.USD.rate_float }}</td>
+  </tr>
+</tbody>
+</table>

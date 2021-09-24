@@ -1,0 +1,10 @@
+.navbar{
+  background-color: #DAF7A6;
+  font-family: Arial, Helvetica, sans-serif;  
+  margin: 10px;
+}
+
+a{
+  color: #065204;
+  font-weight: bold;
+}
